@@ -1,0 +1,196 @@
+/* Section -> Container -> Row */
+
+/*
+
+OVERALL STYLING
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.row {
+  padding: 0 12px;
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+.red{
+  color:red;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/*
+
+HEADER
+
+*/
+
+.fa-clapperboard{
+  font-size: 30px;
+  color:white;
+}
+
+
+.header__top{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav__links{
+  display:flex;
+  gap:20px;
+
+  color:white;
+  font-weight: 700;
+}
+
+.header__bottom{
+  display:flex;
+  flex-direction: column;
+}
+
+.search__bar--title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+
+.search__bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  background-image: url("https://img.magnific.com/free-vector/red-movie-theater-seats-with-curtains-background_1017-38388.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.search__bar{
+  font-size:20px;
+  display: flex;
+  position:absolute;
+  border-radius: 18px;
+  padding:10px;
+  border:none;
+  align-items: center;
+}
+
+.search__btn{
+  position:relative;
+  right:-100px;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+
+/*
+
+MAIN
+
+*/
+
+.explainer{
+  display: flex;
+  justify-content: center;
+
+  font-size:24px;
+  font-weight:700;
+  margin-bottom: 5px;
+}
+
+.movie__list{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.movie{
+  width:25%;
+  padding: 0 12px;
+
+  border: 1px black solid;
+}
+
+.Poster{
+  width:100%;
+}
+
+#filter{
+  display:flex;
+  margin: 0 auto;
+  margin-bottom:20px;
+  font-size:15px;
+}
+
+
+
+/*
+
+RESPONSIVE DESIGN
+
+*/
+
+
+@media (max-width:720px){
+  .header__top{
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav__links{
+    padding:0;
+  }
+
+  .home{
+    display:none;
+  }
+
+  .movie{
+  width:50%;
+  padding: 0 6px;
+  align-items: center;
+
+  border: 1px black solid;
+}
+}

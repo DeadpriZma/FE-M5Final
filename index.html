@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4048dd90c.js" crossorigin="anonymous"></script>
+    <title><FE-M5Final></FE-M5Final></title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__top">
+            <figure class="toplogo">
+              <i class="fa-solid fa-clapperboard"></i>
+            </figure>
+            <nav>
+              <ul class="nav__links">
+                <li class="nav__link"><a class="home" href="#">Home</a></li>
+                <li class="nav__link"><a href="#">Find Movie</a></li>
+                <li class="nav__link"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__bottom">
+            <h3 class="search__bar--title"> Browse Our Movies! </h3>
+            <div class="search">
+              <input class="search__bar" id="searchInput" placeholder="Search Movies"></input>
+              <button><i class="fa-solid fa-magnifying-glass search__btn" onclick="searchTitle()"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <h3 class="explainer">Search results for &nbsp;<span class="red titleHere" onchange="titleHere()"></span></h3>
+          <select id="filter" onchange="filterMovies(event)">
+            <option value="" disabled selected>Sort</option>
+            <option value="AZ">A->Z</option>
+            <option value="ZA">Z->A</option>
+            <option value="OldNew">Oldest->Newest</option>
+            <option value="NewOld">Newest->Oldest</option>
+          </select>
+          <div class="movie__list">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
